@@ -8,14 +8,24 @@ used as a repository of parts by FreeCAD in the future.
 Contributing to the library
 ---------------------------
 
-If you are interested in contributing to this library, please ask for write access to this repository
-on this FreeCAD forum thread: http://forum.freecadweb.org/viewtopic.php?f=19&t=4205
+If you made some interesting objects with FreeCAD, why not share them here? Others might find them
+useful. The procedure is simple:
+
+1. Create a github account for yourself
+2. Fork this repository using the "Fork" button on the top right corner of this page
+3. Follow the [github instructions](https://help.github.com/articles/fork-a-repo/) to clone your fork on your computer
+4. Make all the changes you need, create more folders if necessary, and place your files in them
+5. Upload (push) your changes to your fork on github (refer to the github help for instructions)
+6. When your fork has been updated, you can submit a [pull request](https://help.github.com/articles/creating-a-pull-request/) to have your changes merged into the official library. A member of the community will review your proposed additions and accept the merge.
 
 Each Part should be correctly named, and placed into subdirectories by family or type. They should also
 be available in both .FcStd and .stp formats, and optionally in .stl format (because github lets you
 visualize them). They should also be as simple as possible, and parametric
 so users can easily change their dimensions. In the file properties of each .FcStd file, the author
 should also be mentioned, and the license information if available.
+
+If you are interested in contributing to this library on a more long-term basis, please ask for write 
+access to this repository on this FreeCAD forum thread: http://forum.freecadweb.org/viewtopic.php?f=19&t=4205
 
 License
 -------
@@ -31,16 +41,22 @@ is mentioned in the commit message.
 Install
 -------
 
+As the library is part of the [FreeCAD addons](https://github.com/FreeCAD/FreeCAD-addons), the easiest way
+to install and keep the library updated is through the addons installer. But you can also install it
+manually:
+
 The library is a simple container for FreeCAD (.fcstd) and STEP (.stp) files. You can download it
-anywhere and import its files in your FreeCAD projects. Inside the library, there is also a FreeCAD
+anywhere and import its files in your FreeCAD projects. Inside the library, there is a FreeCAD
 macro (PartsLibrary.FCMacro) that you can place in your FreeCAD macros folder. That macro creates 
 a browser window inside FreeCAD, from which you can easily add the parts by double-clicking them.
 
-Sharing your models
--------------------
+![](http://www.freecadweb.org/wiki/images/c/c5/Parts-library.jpg)
 
-The macro also allows gives a couple of other possibilities,such as adding new objects to it, and
-sharing your objects with others. To be able to share, you will need the python-git package
+Sharing your models from the macro
+----------------------------------
+
+The macro also allows a couple of other possibilities, such as adding new objects, and
+sharing your objects with others. To share, you will need the python-git package
 installed on your computer, and an online git repository you have permission to write to. The 
 easiest way to obtain that is using the "fork" button on top of this github page.
 
